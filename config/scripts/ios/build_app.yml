@@ -1,0 +1,11 @@
+wanderley:
+  xcworkspace: /Users/wanderleylandim/Documents/gif/iphone-pf/ItauPf/ItauPf.xcworkspace
+  scheme: ItauPf-cal
+  configuration: develop
+  export_path: /Users/wanderleylandim/Documents/appium/build
+  
+wanderleyperson:
+  xcworkspace: /Users/wanderleylandim/Documents/gif/iphone-pf/ItauPf/ItauPf.xcworkspace
+  scheme: ItauPfPersonalite-cal
+  configuration: develop
+  export_path: /Users/wanderleylandim/Documents/appium/build

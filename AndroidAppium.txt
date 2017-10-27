@@ -1,4 +1,0 @@
-[caps]
-platformName = "android"
-app = "~/Documents/Example_appium/build/apk/ContactManager.apk"
-deviceName = "Nexus_5_API_24"

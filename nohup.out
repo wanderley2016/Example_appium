@@ -110,3 +110,935 @@ usage: /usr/local/bin/appium [-h] [-v] [--shell] [--reboot] [--ipa IPA]
                              [--show-ios-log] [--enable-heapdump]
                              
 /usr/local/bin/appium: error: Unrecognized arguments: $.
+[Appium] Welcome to Appium v1.7.0
+[Appium] Appium REST http interface listener started on 0.0.0.0:4723
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"platformName":"Android","deviceName":"Nexus_5_API_24","app":"/Users/wanderleylandim/Documents/Example_appium/build/apk/ContactManager.apk"},"capabilities":{"firstMatch":[{"platformName":"Android"}]}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformName":"Android","deviceName":"Nexus_5_API_24","app":"/Users/wanderleylandim/Documents/Example_appium/build/apk/ContactManager.apk"},null,{"firstMatch":[{"platformName":"Android"}]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1509386285031 (15:58:05 GMT-0200 (-02))
+[Appium] Creating new AndroidDriver (v1.26.5) session
+[Appium] Capabilities:
+[Appium]   platformName: 'Android'
+[Appium]   deviceName: 'Nexus_5_API_24'
+[Appium]   app: '/Users/wanderleylandim/Documents/Example_appium/build/apk/ContactManager.apk'
+[BaseDriver] Session created with session id: 552572dd-942a-42c1-8346-381921d52ea7
+[debug] [AndroidDriver] Getting Java version
+[AndroidDriver] Java version is: 1.8.0_144
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/wanderleylandim/Library/Android/sdk/platform-tools/adb
+[AndroidDriver] Retrieving device list
+[debug] [ADB] Trying to find a connected android device
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[AndroidDriver] Using device: emulator-5554
+[ADB] Checking whether adb is present
+[ADB] Using adb from /Users/wanderleylandim/Library/Android/sdk/platform-tools/adb
+[debug] [ADB] Setting device id to emulator-5554
+[BaseDriver] Using local app '/Users/wanderleylandim/Documents/Example_appium/build/apk/ContactManager.apk'
+[debug] [AndroidDriver] Checking whether app is actually present
+[AndroidDriver] Starting Android session
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","wait-for-device"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","echo","ping"]
+[debug] [Logcat] Starting logcat capture
+[debug] [AndroidDriver] Pushing settings apk to device...
+[debug] [ADB] Getting install status for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","list","packages","io.appium.settings"]
+[debug] [ADB] App is installed
+[debug] [ADB] Getting package info for io.appium.settings
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","dumpsys","package","io.appium.settings"]
+[ADB] Checking whether aapt is present
+[ADB] Using aapt from /Users/wanderleylandim/Library/Android/sdk/build-tools/25.0.3/aapt
+[debug] [ADB] The installed "io.appium.settings" package does not require upgrade (4 >= 4)
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.build.version.sdk"]
+[debug] [ADB] Current device property 'ro.build.version.sdk': 24
+[debug] [ADB] Device API level: 24
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","dumpsys","package","io.appium.settings"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","dump","io.appium.settings"]
+[debug] [ADB] Got the following command chunks to execute: pm,grant,io.appium.settings,android.permission.WRITE_SETTINGS,;,pm,grant,io.appium.settings,android.permission.ACCESS_MOCK_LOCATION,;
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";"]
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","grant","io.appium.settings","android.permission.WRITE_SETTINGS",";","pm","grant","io.appium.settings","android.permission.ACCESS_MOCK_LOCATION",";"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","ps"]
+[debug] [ADB] Device API level: 24
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","start","-W","-n","io.appium.settings/.Settings","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[debug] [ADB] Device API level: 24
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","appops","set","io.appium.settings","android:mock_location","allow"]
+[debug] [AndroidDriver] Pushing unlock helper app to device...
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","install","/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk"]
+[debug] [ADB] Application '/usr/local/lib/node_modules/appium/node_modules/appium-unlock/bin/unlock_apk-debug.apk' already installed. Continuing.
+[ADB] Getting device platform version
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.build.version.release"]
+[debug] [ADB] Current device property 'ro.build.version.release': 7.0
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","wm","size"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.product.model"]
+[debug] [ADB] Current device property 'ro.product.model': Android SDK built for x86
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.product.manufacturer"]
+[debug] [ADB] Current device property 'ro.product.manufacturer': Google
+[debug] [AndroidDriver] Parsing package and activity from app manifest
+[ADB] Checking whether aapt is present
+[ADB] Using aapt from /Users/wanderleylandim/Library/Android/sdk/build-tools/25.0.3/aapt
+[ADB] Extracting package and launch activity from manifest
+[debug] [ADB] badging package: com.example.android.contactmanager
+[debug] [ADB] badging act: com.example.android.contactmanager.ContactManager
+[debug] [AndroidDriver] Parsed package and activity are: com.example.android.contactmanager/com.example.android.contactmanager.ContactManager
+[AndroidDriver] Remote apk path is /data/local/tmp/f36be3f4465913c25f830b1a3248e84f.apk
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","ls","/data/local/tmp/f36be3f4465913c25f830b1a3248e84f.apk"]
+[debug] [AndroidDriver] Checking if app is installed
+[debug] [ADB] Getting install status for com.example.android.contactmanager
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","list","packages","com.example.android.contactmanager"]
+[debug] [ADB] App is installed
+[AndroidDriver] Apk is already on remote and installed, resetting
+[debug] [AndroidDriver] Running fast reset (stop and clear)
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","force-stop","com.example.android.contactmanager"]
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","pm","clear","com.example.android.contactmanager"]
+[debug] [AndroidDriver] Extracting strings from apk /Users/wanderleylandim/Documents/Example_appium/build/apk/ContactManager.apk null /var/folders/xs/pp2zqfvs3_34dzd4fr9yz5r40000gn/T/com.example.android.contactmanager
+[debug] [ADB] Extracting strings for language: default
+[debug] [ADB] Device API level: 24
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","persist.sys.locale"]
+[debug] [ADB] Current device property 'persist.sys.locale': 
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","getprop","ro.product.locale"]
+[debug] [ADB] Current device property 'ro.product.locale': en-US
+[debug] [ADB] No strings.xml for language 'en', getting default strings.xml
+[debug] [ADB] Reading strings from converted strings.json
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","push","/var/folders/xs/pp2zqfvs3_34dzd4fr9yz5r40000gn/T/com.example.android.contactmanager/strings.json","/data/local/tmp"]
+[debug] [AndroidBootstrap] Watching for bootstrap disconnect
+[debug] [ADB] Forwarding system: 4724 to device: 4724
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","forward","tcp:4724","tcp:4724"]
+[debug] [UiAutomator] Starting UiAutomator
+[debug] [UiAutomator] Moving to state 'starting'
+[debug] [UiAutomator] Parsing uiautomator jar
+[debug] [UiAutomator] Found jar name: 'AppiumBootstrap.jar'
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","push","/usr/local/lib/node_modules/appium/node_modules/appium-android-bootstrap/bootstrap/bin/AppiumBootstrap.jar","/data/local/tmp/"]
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Starting UIAutomator
+[debug] [ADB] Creating ADB subprocess with args: ["-P",5037,"-s","emulator-5554","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.example.android.contactmanager","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [UiAutomator] Moving to state 'online'
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Loading json...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[AndroidBootstrap] Android bootstrap socket is now connected
+[debug] [ADB] Getting connected devices...
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Client connected
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","dumpsys","window"]
+[AndroidDriver] Screen already unlocked, doing nothing
+[debug] [ADB] Device API level: 24
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","start","-W","-n","com.example.android.contactmanager/com.example.android.contactmanager.ContactManager","-S","-a","android.intent.action.MAIN","-c","android.intent.category.LAUNCHER","-f","0x10200000"]
+[debug] [ADB] Waiting up to 20000ms for activity matching pkg: 'com.example.android.contactmanager' and activity: 'com.example.android.contactmanager.ContactManager' to be focused
+[debug] [ADB] Possible activities, to be checked: 'com.example.android.contactmanager.ContactManager'
+[debug] [ADB] Getting focused package and activity
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","dumpsys","window","windows"]
+[debug] [ADB] Found package: 'com.example.android.contactmanager' and fully qualified activity name : 'com.example.android.contactmanager.ContactManager'
+[Appium] New AndroidDriver session created successfully, session 552572dd-942a-42c1-8346-381921d52ea7 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1509386295263 (15:58:15 GMT-0200 (-02))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"platform":"LINUX","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"platformName":"Android","deviceName":"Nexus_5_API_24","app":"/Users/wanderleylandim/Documents/Example_appium/build/apk/ContactManager.apk"},"platformName":"Android","deviceName":"emulator-5554","app":"/Users/wanderleylandim/Documents/Example_appium/build/apk/ContactManager.apk","deviceUDID":"emulator-5554","platformVersion":"7.0","deviceScreenSize":"1080x1920","deviceModel":"Android SDK built for x86","deviceManufacturer":"Google","appPackage":"com.example.android.contactmanager","appWaitPackage":"com.example.android.contactmanager","appActivity":"com.example.android.contactmanager.ContactManager","appWaitActivity":"com.example.android.contactmanager.ContactManager"}
+[HTTP] <-- POST /wd/hub/session 200 10245 ms - 954 
+[HTTP] --> GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.0","revision":null}}
+[HTTP] <-- GET /wd/hub/status 200 101 ms - 83 
+[HTTP] --> POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/timeouts/implicit_wait {"ms":0}
+[debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [0,"552572dd-942a-42c1-8346-381921d52ea7"]
+[debug] [BaseDriver] Set implicit wait to 0ms
+[debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/timeouts/implicit_wait 200 12 ms - 76 
+[HTTP] --> POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element {"using":"id","value":"title"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","title","552572dd-942a-42c1-8346-381921d52ea7"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"title","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"title","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'title' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.example.android.contactmanager:id/title]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=android:id/title]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"1"}
+[HTTP] <-- POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element 200 497 ms - 87 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"1"}}
+[HTTP] --> POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element {"using":"id","value":"contactEntryText"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","contactEntryText","552572dd-942a-42c1-8346-381921d52ea7"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"contactEntryText","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"contactEntryText","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'contactEntryText' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.example.android.contactmanager:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"2"}}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2"}
+[HTTP] <-- POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element 200 74 ms - 87 
+[HTTP] --> GET /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element/2/displayed {}
+[debug] [MJSONWP] Calling AppiumDriver.elementDisplayed() with args: ["2","552572dd-942a-42c1-8346-381921d52ea7"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"2"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:getAttribute","params":{"attribute":"displayed","elementId":"2"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: getAttribute
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.elementDisplayed() result: true
+[HTTP] <-- GET /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element/2/displayed 200 66 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"true"}
+[HTTP] --> POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element {"using":"id","value":"showInvisible"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["id","showInvisible","552572dd-942a-42c1-8346-381921d52ea7"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"showInvisible","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"showInvisible","context":"","multiple":false}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'showInvisible' using 'ID' with the contextId: '' multiple: false
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[INSTANCE=0, RESOURCE_ID=com.example.android.contactmanager:id/showInvisible]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"3"}
+[HTTP] <-- POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element 200 22 ms - 87 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":{"ELEMENT":"3"}}
+[HTTP] --> POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element/3/click {"{}":""}
+[debug] [MJSONWP] Calling AppiumDriver.click() with args: ["3","552572dd-942a-42c1-8346-381921d52ea7"]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"element:click","params":{"elementId":"3"}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: click
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.click() result: true
+[HTTP] <-- POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/element/3/click 200 336 ms - 76 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":true}
+[HTTP] --> POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/elements {"using":"id","value":"contactEntryText"}
+[debug] [MJSONWP] Calling AppiumDriver.findElements() with args: ["id","contactEntryText","552572dd-942a-42c1-8346-381921d52ea7"]
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, class name, accessibility id, -android uiautomator
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"contactEntryText","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"action","action":"find","params":{"strategy":"id","selector":"contactEntryText","context":"","multiple":true}}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command of type ACTION
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got command action: find
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'contactEntryText' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.example.android.contactmanager:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.example.android.contactmanager:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.example.android.contactmanager:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=android:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=android:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=android:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[DESCRIPTION=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[DESCRIPTION=contactEntryText, INSTANCE=0]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Failed to locate element. Clearing Accessibility cache and retrying.
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Finding 'contactEntryText' using 'ID' with the contextId: '' multiple: true
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=com.example.android.contactmanager:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=com.example.android.contactmanager:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=com.example.android.contactmanager:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=android:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=android:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=android:id/contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[RESOURCE_ID=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[RESOURCE_ID=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[INSTANCE=0, RESOURCE_ID=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Using: UiSelector[DESCRIPTION=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements selector:UiSelector[DESCRIPTION=contactEntryText]
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Element[] is null: (0)
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] getElements tmp selector:UiSelector[DESCRIPTION=contactEntryText, INSTANCE=0]
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [MJSONWP] Responding to client with driver.findElements() result: []
+[HTTP] <-- POST /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7/elements 200 609 ms - 74 
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":[]}
+[HTTP] --> DELETE /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["552572dd-942a-42c1-8346-381921d52ea7"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1509386297049 (15:58:17 GMT-0200 (-02))
+[Appium] Removing session 552572dd-942a-42c1-8346-381921d52ea7 from our master session list
+[debug] [AndroidDriver] Shutting down Android driver
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","force-stop","com.example.android.contactmanager"]
+[debug] [ADB] Pressing the HOME button
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","input","keyevent",3]
+[debug] [AndroidBootstrap] Sending command to android: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [AndroidBootstrap] Received command result from bootstrap
+[debug] [UiAutomator] Shutting down UiAutomator
+[debug] [UiAutomator] Moving to state 'stopping'
+[debug] [UiAutomator] UiAutomator shut down normally
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [ADB] Attempting to kill all uiautomator processes
+[debug] [ADB] Getting all processes with uiautomator
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","ps"]
+[ADB] No uiautomator process found to kill, continuing...
+[debug] [UiAutomator] Moving to state 'stopped'
+[debug] [Logcat] Stopping logcat capture
+[debug] [ADB] Getting connected devices...
+[debug] [ADB] 1 device(s) connected
+[debug] [ADB] Running '/Users/wanderleylandim/Library/Android/sdk/platform-tools/adb' with args: ["-P",5037,"-s","emulator-5554","shell","am","force-stop","io.appium.unlock"]
+[debug] [AndroidDriver] Not cleaning generated files. Add `clearSystemFiles` capability if wanted.
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1509386299851 (15:58:19 GMT-0200 (-02))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/552572dd-942a-42c1-8346-381921d52ea7 200 2804 ms - 76 
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"platformName":"ios","platformVersion":"10.3","deviceName":"iPhone 5","app":"/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app"},"capabilities":{"firstMatch":[{"platformName":"ios","platformVersion":"10.3"}]}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformName":"ios","platformVersion":"10.3","deviceName":"iPhone 5","app":"/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app"},null,{"firstMatch":[{"platformName":"ios","platformVersion":"10.3"}]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1509386318586 (15:58:38 GMT-0200 (-02))
+[Appium] Requested iOS support with version >= 10, using XCUITest driver instead of UIAutomation-based driver, since the latter is unsupported on iOS 10 and up.
+[Appium] Creating new XCUITestDriver (v2.49.0) session
+[Appium] Capabilities:
+[Appium]   platformName: 'ios'
+[Appium]   platformVersion: '10.3'
+[Appium]   deviceName: 'iPhone 5'
+[Appium]   app: '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app'
+[BaseDriver] Session created with session id: cef3b5b4-f9ca-4272-ba12-5b0720a34326
+[debug] [XCUITest] Xcode version set to '8.3.3' (tools v9.0.0.0.1.1504363082)
+[debug] [XCUITest] iOS SDK Version set to '10.3'
+[debug] [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1509386318753 (15:58:38 GMT-0200 (-02))
+[iOSSim] Constructing iOS simulator for Xcode version 8.3.3 with udid '96E093DB-B841-4239-BC7E-56BEF9A0C79F'
+[XCUITest] Determining device to run tests on: udid: '96E093DB-B841-4239-BC7E-56BEF9A0C79F', real device: false
+[BaseDriver] Using local app '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app'
+[debug] [BaseDriver] Event 'appConfigured' logged at 1509386319141 (15:58:39 GMT-0200 (-02))
+[debug] [XCUITest] Checking whether app '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app' is actually present on file system
+[debug] [XCUITest] App is present
+[debug] [iOS] Getting bundle ID from app '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app': 'io.appium.WebViewApp'
+[debug] [BaseDriver] Event 'resetStarted' logged at 1509386319144 (15:58:39 GMT-0200 (-02))
+[XCUITest] Not scrubbing third party app in anticipation of uninstall
+[debug] [BaseDriver] Event 'resetComplete' logged at 1509386319234 (15:58:39 GMT-0200 (-02))
+[debug] [iOSLog] Starting iOS 10.3 simulator log capture
+[debug] [iOSLog] System log path: /Users/wanderleylandim/Library/Logs/CoreSimulator/96E093DB-B841-4239-BC7E-56BEF9A0C79F/system.log
+[debug] [BaseDriver] Event 'logCaptureStarted' logged at 1509386319429 (15:58:39 GMT-0200 (-02))
+[XCUITest] Setting up simulator
+[debug] [iOS] No reason to set locale
+[debug] [iOS] No iOS / app preferences to set
+[debug] [iOSSim] The count of running Simulator UI client instances is 1
+[debug] [iOSSim] Killing all iOS Simulators
+[debug] [iOSSim] Using fkill to kill processes: 80003
+[iOSSim] Starting Simulator UI with command: open -Fn /Applications/Xcode.app/Contents/Developer/Applications/Simulator.app --args -CurrentDeviceUDID 96E093DB-B841-4239-BC7E-56BEF9A0C79F -ConnectHardwareKeyboard 0
+[debug] [iOSSim] The count of running Simulator UI client instances is 1
+[iOSSim] Simulator with UDID 96E093DB-B841-4239-BC7E-56BEF9A0C79F booted in 32 seconds
+[debug] [BaseDriver] Event 'simStarted' logged at 1509386352645 (15:59:12 GMT-0200 (-02))
+[debug] [XCUITest] Reset requested. Removing app with id 'io.appium.WebViewApp' from the device
+[debug] [XCUITest] Installing '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app' on Simulator with UUID '96E093DB-B841-4239-BC7E-56BEF9A0C79F'...
+[debug] [XCUITest] The app has been installed successfully.
+[debug] [BaseDriver] Event 'appInstalled' logged at 1509386360702 (15:59:20 GMT-0200 (-02))
+[XCUITest] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent'
+[XCUITest] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj'
+[debug] [XCUITest] Capability 'useNewWDA' set to false, so trying to reuse currently running WDA instance at 'http://localhost:8100/'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [XCUITest] WDA is not listening at 'http://localhost:8100/'. Rebuilding...
+[debug] [BaseDriver] Event 'wdaStartAttempted' logged at 1509386360844 (15:59:20 GMT-0200 (-02))
+[XCUITest] Launching WebDriverAgent on the device
+[debug] [XCUITest] Carthage found: '/usr/local/bin/carthage'
+[debug] [XCUITest] Killing running processes 'xcodebuild.*96E093DB-B841-4239-BC7E-56BEF9A0C79F, iproxy 8100, 96E093DB-B841-4239-BC7E-56BEF9A0C79F.*XCTRunner' for the device 96E093DB-B841-4239-BC7E-56BEF9A0C79F...
+[debug] [XCUITest] 'pgrep -nif xcodebuild.*96E093DB-B841-4239-BC7E-56BEF9A0C79F' didn't detect any matching processes. Return code: 1
+[debug] [XCUITest] 'pgrep -nif iproxy 8100' didn't detect any matching processes. Return code: 1
+[debug] [XCUITest] 'pgrep -nif 96E093DB-B841-4239-BC7E-56BEF9A0C79F.*XCTRunner' didn't detect any matching processes. Return code: 1
+[debug] [XCUITest] Beginning test with command 'xcodebuild build-for-testing test-without-building -project /usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj -scheme WebDriverAgentRunner -destination id=96E093DB-B841-4239-BC7E-56BEF9A0C79F IPHONEOS_DEPLOYMENT_TARGET=10.3' in directory '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent'
+[debug] [XCUITest] Output from xcodebuild will not be logged. To see xcode logging, use 'showXcodeLog' desired capability
+[debug] [XCUITest] Waiting up to 60000ms for WebDriverAgent to start
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [XCUITest] Log file for xcodebuild test: /Users/wanderleylandim/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/2D831089-4248-4ABC-803F-A1E19562D965/Session-WebDriverAgentRunner-2017-10-30_155925-QrioQY.log
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"06FB00B5-81A3-45EB-AA91-2368AB556514\",\n  \"value\" : {\n    \"state\" : \"success\",\n    \"os\" : {\n      \"name\" : \"iOS\",\n      \"version\" : \"10.3.1\"\n    },\n    \"ios\" : {\n      \"ip\" : \"10.200.10.248\",\n      \"simulatorVersion\" : \"10.3.1\"\n    },\n    \"build\" : {\n      \"time\" : \"Oct 10 2017 16:56:31\"\n    }\n  },\n  \"status\" : 0\n}"
+[debug] [XCUITest] WebDriverAgent running on ip '10.200.10.248'
+[debug] [XCUITest] WebDriverAgent successfully started after 15675ms
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1509386376699 (15:59:36 GMT-0200 (-02))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"io.appium.WebViewApp","arguments":[],"environment":{},"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","capabilities":{"browserName":"WebViewApp","device":"iphone","CFBundleIdentifier":"io.appium.WebViewApp","sdkVersion":"10.3.1"}},"status":0}
+[debug] [BaseDriver] Event 'wdaSessionStarted' logged at 1509386380074 (15:59:40 GMT-0200 (-02))
+[XCUITest] Setting '555' permissions to '/Users/wanderleylandim/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [BaseDriver] Event 'wdaPermsAdjusted' logged at 1509386380132 (15:59:40 GMT-0200 (-02))
+[debug] [BaseDriver] Event 'wdaStarted' logged at 1509386380132 (15:59:40 GMT-0200 (-02))
+[debug] [XCUITest] Setting initial orientation to 'PORTRAIT'
+[debug] [JSONWP Proxy] Proxying [POST /orientation] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/orientation] with body: {"orientation":"PORTRAIT"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{},"status":0}
+[debug] [BaseDriver] Event 'orientationSet' logged at 1509386381273 (15:59:41 GMT-0200 (-02))
+[Appium] New XCUITestDriver session created successfully, session cef3b5b4-f9ca-4272-ba12-5b0720a34326 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1509386381274 (15:59:41 GMT-0200 (-02))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"ios","platformVersion":"10.3","deviceName":"iPhone 5","app":"/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app","udid":"96E093DB-B841-4239-BC7E-56BEF9A0C79F"}
+[HTTP] <-- POST /wd/hub/session 200 62687 ms - 462 
+[HTTP] --> GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.0","revision":null}}
+[HTTP] <-- GET /wd/hub/status 200 63 ms - 83 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/timeouts/implicit_wait {"ms":0}
+[debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [0,"cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'implicitWait'
+[debug] [BaseDriver] Set implicit wait to 0ms
+[debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/timeouts/implicit_wait 200 5 ms - 76 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeButton","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"ELEMENT":"375E1FB0-BB6E-4749-8B7A-C1E7BC32CB58"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"375E1FB0-BB6E-4749-8B7A-C1E7BC32CB58"}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 200 175 ms - 122 
+[HTTP] --> GET /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element/375E1FB0-BB6E-4749-8B7A-C1E7BC32CB58/text {}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [XCUITest] Executing command 'proxyReqRes'
+[debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element/375E1FB0-BB6E-4749-8B7A-C1E7BC32CB58/text] to [GET http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element/375E1FB0-BB6E-4749-8B7A-C1E7BC32CB58/text] with body: {}
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"031704C2-33BF-41A0-8CA0-BC32B0ED2655\",\n  \"value\" : \"Go\",\n  \"status\" : 0\n}"
+[JSONWP Proxy] Replacing sessionId 031704C2-33BF-41A0-8CA0-BC32B0ED2655 with cef3b5b4-f9ca-4272-ba12-5b0720a34326
+[HTTP] <-- GET /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element/375E1FB0-BB6E-4749-8B7A-C1E7BC32CB58/text 200 188 ms - 76 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeTextField"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeTextField","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeTextField"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"ELEMENT":"7B38FF59-D7D0-48D1-A79A-D9E099666C0E"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"7B38FF59-D7D0-48D1-A79A-D9E099666C0E"}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 200 151 ms - 122 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element/7B38FF59-D7D0-48D1-A79A-D9E099666C0E/value {"value":["www.globo.com"]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["www.globo.com"],"7B38FF59-D7D0-48D1-A79A-D9E099666C0E","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'setValue'
+[debug] [JSONWP Proxy] Proxying [POST /element/7B38FF59-D7D0-48D1-A79A-D9E099666C0E/value] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element/7B38FF59-D7D0-48D1-A79A-D9E099666C0E/value] with body: {"value":["w","w","w",".","g","l","o","b","o",".","c","o","m"]}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":"Error Domain=XCTDaemonErrorDomain Code=14 \"Timed out waiting for key event to complete\" UserInfo={NSLocalizedDescription=Timed out waiting for key event to complete}","status":13}
+[debug] [JSONWP Proxy] Proxying [GET /element/7B38FF59-D7D0-48D1-A79A-D9E099666C0E/attribute/type] to [GET http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element/7B38FF59-D7D0-48D1-A79A-D9E099666C0E/attribute/type] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"031704C2-33BF-41A0-8CA0-BC32B0ED2655\",\n  \"value\" : \"XCUIElementTypeTextField\",\n  \"status\" : 0\n}"
+[XCUITest] Cannot type in the text field because of UnknownError: An unknown server-side error occurred while processing the command. Original error: Error Domain=XCTDaemonErrorDomain Code=14 "Timed out waiting for key event to complete" UserInfo={NSLocalizedDescription=Timed out waiting for key event to complete}.
+Trying to apply a workaround...
+[debug] [BaseDriver] Set implicit wait to 0ms
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeKeyboard"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"ELEMENT":"014F7A80-6A9F-4BCB-B942-04BCFAEB9629"},"status":0}
+[debug] [XCUITest] Keyboard found. Continuing with text input.
+[debug] [BaseDriver] Set implicit wait to 0ms
+[debug] [JSONWP Proxy] Proxying [POST /element/7B38FF59-D7D0-48D1-A79A-D9E099666C0E/value] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element/7B38FF59-D7D0-48D1-A79A-D9E099666C0E/value] with body: {"value":["w","w","w",".","g","l","o","b","o",".","c","o","m"]}
+[debug] [JSONWP Proxy] Got response with status 200: {"status":0,"id":"7B38FF59-D7D0-48D1-A79A-D9E099666C0E","sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":""}
+[debug] [MJSONWP] Responding to client with driver.setValue() result: null
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element/7B38FF59-D7D0-48D1-A79A-D9E099666C0E/value 200 4275 ms - 76 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeButton","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"ELEMENT":"E96C247F-B278-44A1-B5B7-476B9287756C"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"E96C247F-B278-44A1-B5B7-476B9287756C"}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 200 177 ms - 122 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element/E96C247F-B278-44A1-B5B7-476B9287756C/click {"{}":""}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [XCUITest] Executing command 'proxyReqRes'
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element/E96C247F-B278-44A1-B5B7-476B9287756C/click] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element/E96C247F-B278-44A1-B5B7-476B9287756C/click] with body: {"{}":""}
+[debug] [JSONWP Proxy] Got response with status 200: {"status":0,"id":"E96C247F-B278-44A1-B5B7-476B9287756C","sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":""}
+[JSONWP Proxy] Replacing sessionId 031704C2-33BF-41A0-8CA0-BC32B0ED2655 with cef3b5b4-f9ca-4272-ba12-5b0720a34326
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element/E96C247F-B278-44A1-B5B7-476B9287756C/click 200 826 ms - 118 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 1322 ms - 164 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 229 ms - 164 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 215 ms - 164 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 231 ms - 164 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 224 ms - 164 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 202 ms - 164 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 174 ms - 164 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 187 ms - 164 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 212 ms - 164 
+[HTTP] --> POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"031704C2-33BF-41A0-8CA0-BC32B0ED2655","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326/element 500 197 ms - 164 
+[HTTP] --> DELETE /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["cef3b5b4-f9ca-4272-ba12-5b0720a34326"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1509386392475 (15:59:52 GMT-0200 (-02))
+[Appium] Removing session cef3b5b4-f9ca-4272-ba12-5b0720a34326 from our master session list
+[debug] [JSONWP Proxy] Proxying [DELETE /session/cef3b5b4-f9ca-4272-ba12-5b0720a34326] to [DELETE http://localhost:8100/session/031704C2-33BF-41A0-8CA0-BC32B0ED2655] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"F71927F7-F6D4-46EE-B236-ADDD765512B8\",\n  \"value\" : {\n\n  },\n  \"status\" : 0\n}"
+[XCUITest] Setting '755' permissions to '/Users/wanderleylandim/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [iOSLog] Stopping iOS log capture
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1509386392892 (15:59:52 GMT-0200 (-02))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/cef3b5b4-f9ca-4272-ba12-5b0720a34326 200 419 ms - 76 
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"platformName":"ios","platformVersion":"10.3","deviceName":"iPhone 5","app":"/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app"},"capabilities":{"firstMatch":[{"platformName":"ios","platformVersion":"10.3"}]}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformName":"ios","platformVersion":"10.3","deviceName":"iPhone 5","app":"/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app"},null,{"firstMatch":[{"platformName":"ios","platformVersion":"10.3"}]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1509386402542 (16:00:02 GMT-0200 (-02))
+[Appium] Requested iOS support with version >= 10, using XCUITest driver instead of UIAutomation-based driver, since the latter is unsupported on iOS 10 and up.
+[Appium] Creating new XCUITestDriver (v2.49.0) session
+[Appium] Capabilities:
+[Appium]   platformName: 'ios'
+[Appium]   platformVersion: '10.3'
+[Appium]   deviceName: 'iPhone 5'
+[Appium]   app: '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app'
+[BaseDriver] Session created with session id: 18ac227b-508a-4ff6-923e-24602b4ea3e3
+[debug] [XCUITest] Xcode version set to '8.3.3' (tools v9.0.0.0.1.1504363082)
+[debug] [XCUITest] iOS SDK Version set to '10.3'
+[debug] [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1509386402623 (16:00:02 GMT-0200 (-02))
+[iOSSim] Constructing iOS simulator for Xcode version 8.3.3 with udid '96E093DB-B841-4239-BC7E-56BEF9A0C79F'
+[XCUITest] Determining device to run tests on: udid: '96E093DB-B841-4239-BC7E-56BEF9A0C79F', real device: false
+[BaseDriver] Using local app '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app'
+[debug] [BaseDriver] Event 'appConfigured' logged at 1509386402924 (16:00:02 GMT-0200 (-02))
+[debug] [XCUITest] Checking whether app '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app' is actually present on file system
+[debug] [XCUITest] App is present
+[debug] [iOS] Getting bundle ID from app '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app': 'io.appium.WebViewApp'
+[debug] [BaseDriver] Event 'resetStarted' logged at 1509386402925 (16:00:02 GMT-0200 (-02))
+[XCUITest] Not scrubbing third party app in anticipation of uninstall
+[debug] [BaseDriver] Event 'resetComplete' logged at 1509386403105 (16:00:03 GMT-0200 (-02))
+[debug] [iOSLog] Starting iOS 10.3 simulator log capture
+[debug] [iOSLog] System log path: /Users/wanderleylandim/Library/Logs/CoreSimulator/96E093DB-B841-4239-BC7E-56BEF9A0C79F/system.log
+[debug] [BaseDriver] Event 'logCaptureStarted' logged at 1509386403203 (16:00:03 GMT-0200 (-02))
+[XCUITest] Setting up simulator
+[debug] [iOS] No reason to set locale
+[debug] [iOS] No iOS / app preferences to set
+[debug] [iOSSim] The count of running Simulator UI client instances is 1
+[iOSSim] Both Simulator with UDID 96E093DB-B841-4239-BC7E-56BEF9A0C79F and the UI client are currently running
+[debug] [BaseDriver] Event 'simStarted' logged at 1509386403560 (16:00:03 GMT-0200 (-02))
+[debug] [XCUITest] Reset requested. Removing app with id 'io.appium.WebViewApp' from the device
+[debug] [XCUITest] Installing '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app' on Simulator with UUID '96E093DB-B841-4239-BC7E-56BEF9A0C79F'...
+[debug] [XCUITest] The app has been installed successfully.
+[debug] [BaseDriver] Event 'appInstalled' logged at 1509386408654 (16:00:08 GMT-0200 (-02))
+[XCUITest] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent'
+[XCUITest] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj'
+[debug] [XCUITest] Capability 'useNewWDA' set to false, so trying to reuse currently running WDA instance at 'http://localhost:8100/'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"F71927F7-F6D4-46EE-B236-ADDD765512B8\",\n  \"value\" : {\n    \"state\" : \"success\",\n    \"os\" : {\n      \"name\" : \"iOS\",\n      \"version\" : \"10.3.1\"\n    },\n    \"ios\" : {\n      \"ip\" : \"10.200.10.248\",\n      \"simulatorVersion\" : \"10.3.1\"\n    },\n    \"build\" : {\n      \"time\" : \"Oct 10 2017 16:56:31\"\n    }\n  },\n  \"status\" : 0\n}"
+[debug] [XCUITest] Detected WDA listening at 'http://localhost:8100/'. Setting WDA endpoint to 'http://localhost:8100/'
+[debug] [BaseDriver] Event 'wdaStartAttempted' logged at 1509386408657 (16:00:08 GMT-0200 (-02))
+[XCUITest] Using provided WebdriverAgent at 'http://localhost:8100/'
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1509386408658 (16:00:08 GMT-0200 (-02))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"F71927F7-F6D4-46EE-B236-ADDD765512B8\",\n  \"value\" : {\n    \"state\" : \"success\",\n    \"os\" : {\n      \"name\" : \"iOS\",\n      \"version\" : \"10.3.1\"\n    },\n    \"ios\" : {\n      \"ip\" : \"10.200.10.248\",\n      \"simulatorVersion\" : \"10.3.1\"\n    },\n    \"build\" : {\n      \"time\" : \"Oct 10 2017 16:56:31\"\n    }\n  },\n  \"status\" : 0\n}"
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"io.appium.WebViewApp","arguments":[],"environment":{},"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":{"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","capabilities":{"browserName":"WebViewApp","device":"iphone","CFBundleIdentifier":"io.appium.WebViewApp","sdkVersion":"10.3.1"}},"status":0}
+[debug] [BaseDriver] Event 'wdaSessionStarted' logged at 1509386411245 (16:00:11 GMT-0200 (-02))
+[XCUITest] Setting '555' permissions to '/Users/wanderleylandim/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [BaseDriver] Event 'wdaPermsAdjusted' logged at 1509386411299 (16:00:11 GMT-0200 (-02))
+[debug] [BaseDriver] Event 'wdaStarted' logged at 1509386411299 (16:00:11 GMT-0200 (-02))
+[debug] [XCUITest] Setting initial orientation to 'PORTRAIT'
+[debug] [JSONWP Proxy] Proxying [POST /orientation] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/orientation] with body: {"orientation":"PORTRAIT"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":{},"status":0}
+[debug] [BaseDriver] Event 'orientationSet' logged at 1509386412418 (16:00:12 GMT-0200 (-02))
+[Appium] New XCUITestDriver session created successfully, session 18ac227b-508a-4ff6-923e-24602b4ea3e3 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1509386412418 (16:00:12 GMT-0200 (-02))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"ios","platformVersion":"10.3","deviceName":"iPhone 5","app":"/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app","udid":"96E093DB-B841-4239-BC7E-56BEF9A0C79F"}
+[HTTP] <-- POST /wd/hub/session 200 9876 ms - 462 
+[HTTP] --> GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.0","revision":null}}
+[HTTP] <-- GET /wd/hub/status 200 36 ms - 83 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/timeouts/implicit_wait {"ms":0}
+[debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [0,"18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [XCUITest] Executing command 'implicitWait'
+[debug] [BaseDriver] Set implicit wait to 0ms
+[debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/timeouts/implicit_wait 200 2 ms - 76 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeButton","18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element] with body: {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":{"ELEMENT":"229965F8-036E-4A24-B52B-92789BAEC2A7"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"229965F8-036E-4A24-B52B-92789BAEC2A7"}
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element 200 125 ms - 122 
+[HTTP] --> GET /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/229965F8-036E-4A24-B52B-92789BAEC2A7/text {}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [XCUITest] Executing command 'proxyReqRes'
+[debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/229965F8-036E-4A24-B52B-92789BAEC2A7/text] to [GET http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element/229965F8-036E-4A24-B52B-92789BAEC2A7/text] with body: {}
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"178D7CEB-3185-448B-9750-68062A1BA387\",\n  \"value\" : \"Go\",\n  \"status\" : 0\n}"
+[JSONWP Proxy] Replacing sessionId 178D7CEB-3185-448B-9750-68062A1BA387 with 18ac227b-508a-4ff6-923e-24602b4ea3e3
+[HTTP] <-- GET /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/229965F8-036E-4A24-B52B-92789BAEC2A7/text 200 162 ms - 76 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element {"using":"class name","value":"XCUIElementTypeTextField"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeTextField","18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element] with body: {"using":"class name","value":"XCUIElementTypeTextField"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":{"ELEMENT":"AB18F2B8-C87B-40C1-A1B5-393920AE16FB"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"AB18F2B8-C87B-40C1-A1B5-393920AE16FB"}
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element 200 126 ms - 122 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/AB18F2B8-C87B-40C1-A1B5-393920AE16FB/value {"value":["www.globo.com"]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["www.globo.com"],"AB18F2B8-C87B-40C1-A1B5-393920AE16FB","18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [XCUITest] Executing command 'setValue'
+[debug] [JSONWP Proxy] Proxying [POST /element/AB18F2B8-C87B-40C1-A1B5-393920AE16FB/value] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element/AB18F2B8-C87B-40C1-A1B5-393920AE16FB/value] with body: {"value":["w","w","w",".","g","l","o","b","o",".","c","o","m"]}
+[debug] [JSONWP Proxy] Got response with status 200: {"status":0,"id":"AB18F2B8-C87B-40C1-A1B5-393920AE16FB","sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":""}
+[debug] [MJSONWP] Responding to client with driver.setValue() result: null
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/AB18F2B8-C87B-40C1-A1B5-393920AE16FB/value 200 1549 ms - 76 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeButton","18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element] with body: {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":{"ELEMENT":"60D060BE-F186-4C7A-B0BB-B1A44535ABC8"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"60D060BE-F186-4C7A-B0BB-B1A44535ABC8"}
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element 200 194 ms - 122 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/60D060BE-F186-4C7A-B0BB-B1A44535ABC8/click {"{}":""}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [XCUITest] Executing command 'proxyReqRes'
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/60D060BE-F186-4C7A-B0BB-B1A44535ABC8/click] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element/60D060BE-F186-4C7A-B0BB-B1A44535ABC8/click] with body: {"{}":""}
+[debug] [JSONWP Proxy] Got response with status 200: {"status":0,"id":"60D060BE-F186-4C7A-B0BB-B1A44535ABC8","sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":""}
+[JSONWP Proxy] Replacing sessionId 178D7CEB-3185-448B-9750-68062A1BA387 with 18ac227b-508a-4ff6-923e-24602b4ea3e3
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/60D060BE-F186-4C7A-B0BB-B1A44535ABC8/click 200 823 ms - 118 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element 500 1003 ms - 164 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element 500 261 ms - 164 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element 500 246 ms - 164 
+[HTTP] --> POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"178D7CEB-3185-448B-9750-68062A1BA387","value":{"ELEMENT":"5899D512-AEE7-41BD-BFD2-3656D9403D81"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"5899D512-AEE7-41BD-BFD2-3656D9403D81"}
+[HTTP] <-- POST /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element 200 851 ms - 122 
+[HTTP] --> GET /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/5899D512-AEE7-41BD-BFD2-3656D9403D81/displayed {}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [XCUITest] Executing command 'proxyReqRes'
+[debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/5899D512-AEE7-41BD-BFD2-3656D9403D81/displayed] to [GET http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387/element/5899D512-AEE7-41BD-BFD2-3656D9403D81/displayed] with body: {}
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"178D7CEB-3185-448B-9750-68062A1BA387\",\n  \"value\" : true,\n  \"status\" : 0\n}"
+[JSONWP Proxy] Replacing sessionId 178D7CEB-3185-448B-9750-68062A1BA387 with 18ac227b-508a-4ff6-923e-24602b4ea3e3
+[HTTP] <-- GET /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3/element/5899D512-AEE7-41BD-BFD2-3656D9403D81/displayed 200 5694 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["18ac227b-508a-4ff6-923e-24602b4ea3e3"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1509386424154 (16:00:24 GMT-0200 (-02))
+[Appium] Removing session 18ac227b-508a-4ff6-923e-24602b4ea3e3 from our master session list
+[debug] [JSONWP Proxy] Proxying [DELETE /session/18ac227b-508a-4ff6-923e-24602b4ea3e3] to [DELETE http://localhost:8100/session/178D7CEB-3185-448B-9750-68062A1BA387] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"A9E34237-F862-4A17-B224-A1E4A280CF7D\",\n  \"value\" : {\n\n  },\n  \"status\" : 0\n}"
+[XCUITest] Setting '755' permissions to '/Users/wanderleylandim/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [iOSLog] Stopping iOS log capture
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1509386424698 (16:00:24 GMT-0200 (-02))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/18ac227b-508a-4ff6-923e-24602b4ea3e3 200 545 ms - 76 
+[HTTP] --> POST /wd/hub/session {"desiredCapabilities":{"platformName":"ios","platformVersion":"10.3","deviceName":"iPhone 5","app":"/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app"},"capabilities":{"firstMatch":[{"platformName":"ios","platformVersion":"10.3"}]}}
+[debug] [MJSONWP] Calling AppiumDriver.createSession() with args: [{"platformName":"ios","platformVersion":"10.3","deviceName":"iPhone 5","app":"/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app"},null,{"firstMatch":[{"platformName":"ios","platformVersion":"10.3"}]}]
+[debug] [BaseDriver] Event 'newSessionRequested' logged at 1509386452294 (16:00:52 GMT-0200 (-02))
+[Appium] Requested iOS support with version >= 10, using XCUITest driver instead of UIAutomation-based driver, since the latter is unsupported on iOS 10 and up.
+[Appium] Creating new XCUITestDriver (v2.49.0) session
+[Appium] Capabilities:
+[Appium]   platformName: 'ios'
+[Appium]   platformVersion: '10.3'
+[Appium]   deviceName: 'iPhone 5'
+[Appium]   app: '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app'
+[BaseDriver] Session created with session id: f03506f6-be28-4de7-9122-943291b1dea8
+[debug] [XCUITest] Xcode version set to '8.3.3' (tools v9.0.0.0.1.1504363082)
+[debug] [XCUITest] iOS SDK Version set to '10.3'
+[debug] [BaseDriver] Event 'xcodeDetailsRetrieved' logged at 1509386452349 (16:00:52 GMT-0200 (-02))
+[iOSSim] Constructing iOS simulator for Xcode version 8.3.3 with udid '96E093DB-B841-4239-BC7E-56BEF9A0C79F'
+[XCUITest] Determining device to run tests on: udid: '96E093DB-B841-4239-BC7E-56BEF9A0C79F', real device: false
+[BaseDriver] Using local app '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app'
+[debug] [BaseDriver] Event 'appConfigured' logged at 1509386452604 (16:00:52 GMT-0200 (-02))
+[debug] [XCUITest] Checking whether app '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app' is actually present on file system
+[debug] [XCUITest] App is present
+[debug] [iOS] Getting bundle ID from app '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app': 'io.appium.WebViewApp'
+[debug] [BaseDriver] Event 'resetStarted' logged at 1509386452605 (16:00:52 GMT-0200 (-02))
+[XCUITest] Not scrubbing third party app in anticipation of uninstall
+[debug] [BaseDriver] Event 'resetComplete' logged at 1509386452803 (16:00:52 GMT-0200 (-02))
+[debug] [iOSLog] Starting iOS 10.3 simulator log capture
+[debug] [iOSLog] System log path: /Users/wanderleylandim/Library/Logs/CoreSimulator/96E093DB-B841-4239-BC7E-56BEF9A0C79F/system.log
+[debug] [BaseDriver] Event 'logCaptureStarted' logged at 1509386452885 (16:00:52 GMT-0200 (-02))
+[XCUITest] Setting up simulator
+[debug] [iOS] No reason to set locale
+[debug] [iOS] No iOS / app preferences to set
+[debug] [iOSSim] The count of running Simulator UI client instances is 1
+[iOSSim] Both Simulator with UDID 96E093DB-B841-4239-BC7E-56BEF9A0C79F and the UI client are currently running
+[debug] [BaseDriver] Event 'simStarted' logged at 1509386453147 (16:00:53 GMT-0200 (-02))
+[debug] [XCUITest] Reset requested. Removing app with id 'io.appium.WebViewApp' from the device
+[debug] [XCUITest] Installing '/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app' on Simulator with UUID '96E093DB-B841-4239-BC7E-56BEF9A0C79F'...
+[debug] [XCUITest] The app has been installed successfully.
+[debug] [BaseDriver] Event 'appInstalled' logged at 1509386458154 (16:00:58 GMT-0200 (-02))
+[XCUITest] Using WDA path: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent'
+[XCUITest] Using WDA agent: '/usr/local/lib/node_modules/appium/node_modules/appium-xcuitest-driver/WebDriverAgent/WebDriverAgent.xcodeproj'
+[debug] [XCUITest] Capability 'useNewWDA' set to false, so trying to reuse currently running WDA instance at 'http://localhost:8100/'
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"A9E34237-F862-4A17-B224-A1E4A280CF7D\",\n  \"value\" : {\n    \"state\" : \"success\",\n    \"os\" : {\n      \"name\" : \"iOS\",\n      \"version\" : \"10.3.1\"\n    },\n    \"ios\" : {\n      \"ip\" : \"10.200.10.248\",\n      \"simulatorVersion\" : \"10.3.1\"\n    },\n    \"build\" : {\n      \"time\" : \"Oct 10 2017 16:56:31\"\n    }\n  },\n  \"status\" : 0\n}"
+[debug] [XCUITest] Detected WDA listening at 'http://localhost:8100/'. Setting WDA endpoint to 'http://localhost:8100/'
+[debug] [BaseDriver] Event 'wdaStartAttempted' logged at 1509386458158 (16:00:58 GMT-0200 (-02))
+[XCUITest] Using provided WebdriverAgent at 'http://localhost:8100/'
+[debug] [BaseDriver] Event 'wdaSessionAttempted' logged at 1509386458159 (16:00:58 GMT-0200 (-02))
+[debug] [XCUITest] Sending createSession command to WDA
+[debug] [JSONWP Proxy] Proxying [GET /status] to [GET http://localhost:8100/status] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"A9E34237-F862-4A17-B224-A1E4A280CF7D\",\n  \"value\" : {\n    \"state\" : \"success\",\n    \"os\" : {\n      \"name\" : \"iOS\",\n      \"version\" : \"10.3.1\"\n    },\n    \"ios\" : {\n      \"ip\" : \"10.200.10.248\",\n      \"simulatorVersion\" : \"10.3.1\"\n    },\n    \"build\" : {\n      \"time\" : \"Oct 10 2017 16:56:31\"\n    }\n  },\n  \"status\" : 0\n}"
+[debug] [JSONWP Proxy] Proxying [POST /session] to [POST http://localhost:8100/session] with body: {"desiredCapabilities":{"bundleId":"io.appium.WebViewApp","arguments":[],"environment":{},"shouldWaitForQuiescence":true,"shouldUseTestManagerForVisibilityDetection":false,"maxTypingFrequency":60,"shouldUseSingletonTestManager":true}}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"87E61555-761D-474D-8962-35B2673234C9","value":{"sessionId":"87E61555-761D-474D-8962-35B2673234C9","capabilities":{"browserName":"WebViewApp","device":"iphone","CFBundleIdentifier":"io.appium.WebViewApp","sdkVersion":"10.3.1"}},"status":0}
+[debug] [BaseDriver] Event 'wdaSessionStarted' logged at 1509386460833 (16:01:00 GMT-0200 (-02))
+[XCUITest] Setting '555' permissions to '/Users/wanderleylandim/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [BaseDriver] Event 'wdaPermsAdjusted' logged at 1509386460889 (16:01:00 GMT-0200 (-02))
+[debug] [BaseDriver] Event 'wdaStarted' logged at 1509386460889 (16:01:00 GMT-0200 (-02))
+[debug] [XCUITest] Setting initial orientation to 'PORTRAIT'
+[debug] [JSONWP Proxy] Proxying [POST /orientation] to [POST http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/orientation] with body: {"orientation":"PORTRAIT"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"87E61555-761D-474D-8962-35B2673234C9","value":{},"status":0}
+[debug] [BaseDriver] Event 'orientationSet' logged at 1509386462020 (16:01:02 GMT-0200 (-02))
+[Appium] New XCUITestDriver session created successfully, session f03506f6-be28-4de7-9122-943291b1dea8 added to master session list
+[debug] [BaseDriver] Event 'newSessionStarted' logged at 1509386462020 (16:01:02 GMT-0200 (-02))
+[debug] [MJSONWP] Responding to client with driver.createSession() result: {"webStorageEnabled":false,"locationContextEnabled":false,"browserName":"","platform":"MAC","javascriptEnabled":true,"databaseEnabled":false,"takesScreenshot":true,"networkConnectionEnabled":false,"platformName":"ios","platformVersion":"10.3","deviceName":"iPhone 5","app":"/Users/wanderleylandim/Documents/Example_appium/build/WebViewApp.app","udid":"96E093DB-B841-4239-BC7E-56BEF9A0C79F"}
+[HTTP] <-- POST /wd/hub/session 200 9726 ms - 462 
+[HTTP] --> GET /wd/hub/status {}
+[debug] [MJSONWP] Calling AppiumDriver.getStatus() with args: []
+[debug] [MJSONWP] Responding to client with driver.getStatus() result: {"build":{"version":"1.7.0","revision":null}}
+[HTTP] <-- GET /wd/hub/status 200 56 ms - 83 
+[HTTP] --> POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/timeouts/implicit_wait {"ms":0}
+[debug] [MJSONWP] Calling AppiumDriver.implicitWait() with args: [0,"f03506f6-be28-4de7-9122-943291b1dea8"]
+[debug] [XCUITest] Executing command 'implicitWait'
+[debug] [BaseDriver] Set implicit wait to 0ms
+[debug] [MJSONWP] Responding to client with driver.implicitWait() result: null
+[HTTP] <-- POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/timeouts/implicit_wait 200 3 ms - 76 
+[HTTP] --> POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeButton","f03506f6-be28-4de7-9122-943291b1dea8"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/element] with body: {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"87E61555-761D-474D-8962-35B2673234C9","value":{"ELEMENT":"24956328-8912-460B-96CA-F463804C06EF"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"24956328-8912-460B-96CA-F463804C06EF"}
+[HTTP] <-- POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element 200 139 ms - 122 
+[HTTP] --> GET /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/24956328-8912-460B-96CA-F463804C06EF/text {}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [XCUITest] Executing command 'proxyReqRes'
+[debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/24956328-8912-460B-96CA-F463804C06EF/text] to [GET http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/element/24956328-8912-460B-96CA-F463804C06EF/text] with body: {}
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"87E61555-761D-474D-8962-35B2673234C9\",\n  \"value\" : \"Go\",\n  \"status\" : 0\n}"
+[JSONWP Proxy] Replacing sessionId 87E61555-761D-474D-8962-35B2673234C9 with f03506f6-be28-4de7-9122-943291b1dea8
+[HTTP] <-- GET /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/24956328-8912-460B-96CA-F463804C06EF/text 200 181 ms - 76 
+[HTTP] --> POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element {"using":"class name","value":"XCUIElementTypeTextField"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeTextField","f03506f6-be28-4de7-9122-943291b1dea8"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/element] with body: {"using":"class name","value":"XCUIElementTypeTextField"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"87E61555-761D-474D-8962-35B2673234C9","value":{"ELEMENT":"2DD719D6-4249-44B6-B0AF-82D1DDA4670B"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"2DD719D6-4249-44B6-B0AF-82D1DDA4670B"}
+[HTTP] <-- POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element 200 157 ms - 122 
+[HTTP] --> POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/2DD719D6-4249-44B6-B0AF-82D1DDA4670B/value {"value":["www.globo.com"]}
+[debug] [MJSONWP] Calling AppiumDriver.setValue() with args: [["www.globo.com"],"2DD719D6-4249-44B6-B0AF-82D1DDA4670B","f03506f6-be28-4de7-9122-943291b1dea8"]
+[debug] [XCUITest] Executing command 'setValue'
+[debug] [JSONWP Proxy] Proxying [POST /element/2DD719D6-4249-44B6-B0AF-82D1DDA4670B/value] to [POST http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/element/2DD719D6-4249-44B6-B0AF-82D1DDA4670B/value] with body: {"value":["w","w","w",".","g","l","o","b","o",".","c","o","m"]}
+[debug] [JSONWP Proxy] Got response with status 200: {"status":0,"id":"2DD719D6-4249-44B6-B0AF-82D1DDA4670B","sessionId":"87E61555-761D-474D-8962-35B2673234C9","value":""}
+[debug] [MJSONWP] Responding to client with driver.setValue() result: null
+[HTTP] <-- POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/2DD719D6-4249-44B6-B0AF-82D1DDA4670B/value 200 1582 ms - 76 
+[HTTP] --> POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeButton","f03506f6-be28-4de7-9122-943291b1dea8"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/element] with body: {"using":"class name","value":"XCUIElementTypeButton"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"87E61555-761D-474D-8962-35B2673234C9","value":{"ELEMENT":"F75045E8-DA1B-4808-9DFA-A6FF51A8682C"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"F75045E8-DA1B-4808-9DFA-A6FF51A8682C"}
+[HTTP] <-- POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element 200 243 ms - 122 
+[HTTP] --> POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/F75045E8-DA1B-4808-9DFA-A6FF51A8682C/click {"{}":""}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [XCUITest] Executing command 'proxyReqRes'
+[debug] [JSONWP Proxy] Proxying [POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/F75045E8-DA1B-4808-9DFA-A6FF51A8682C/click] to [POST http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/element/F75045E8-DA1B-4808-9DFA-A6FF51A8682C/click] with body: {"{}":""}
+[debug] [JSONWP Proxy] Got response with status 200: {"status":0,"id":"F75045E8-DA1B-4808-9DFA-A6FF51A8682C","sessionId":"87E61555-761D-474D-8962-35B2673234C9","value":""}
+[JSONWP Proxy] Replacing sessionId 87E61555-761D-474D-8962-35B2673234C9 with f03506f6-be28-4de7-9122-943291b1dea8
+[HTTP] <-- POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/F75045E8-DA1B-4808-9DFA-A6FF51A8682C/click 200 879 ms - 118 
+[HTTP] --> POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","f03506f6-be28-4de7-9122-943291b1dea8"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"87E61555-761D-474D-8962-35B2673234C9","value":{"using":"class name","value":"XCUIElementTypeLink","description":"unable to find an element"},"status":7}
+[HTTP] <-- POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element 500 1202 ms - 164 
+[HTTP] --> POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [MJSONWP] Calling AppiumDriver.findElement() with args: ["class name","XCUIElementTypeLink","f03506f6-be28-4de7-9122-943291b1dea8"]
+[debug] [XCUITest] Executing command 'findElement'
+[debug] [BaseDriver] Valid locator strategies for this request: xpath, id, name, class name, -ios predicate string, -ios class chain, accessibility id
+[debug] [BaseDriver] Waiting up to 0 ms for condition
+[debug] [JSONWP Proxy] Proxying [POST /element] to [POST http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/element] with body: {"using":"class name","value":"XCUIElementTypeLink"}
+[debug] [JSONWP Proxy] Got response with status 200: {"sessionId":"87E61555-761D-474D-8962-35B2673234C9","value":{"ELEMENT":"6DEBAEF7-0015-4B15-85C3-88851410E059"},"status":0}
+[debug] [MJSONWP] Responding to client with driver.findElement() result: {"ELEMENT":"6DEBAEF7-0015-4B15-85C3-88851410E059"}
+[HTTP] <-- POST /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element 200 753 ms - 122 
+[HTTP] --> GET /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/6DEBAEF7-0015-4B15-85C3-88851410E059/displayed {}
+[MJSONWP] Driver proxy active, passing request on via HTTP proxy
+[debug] [XCUITest] Executing command 'proxyReqRes'
+[debug] [JSONWP Proxy] Proxying [GET /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/6DEBAEF7-0015-4B15-85C3-88851410E059/displayed] to [GET http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9/element/6DEBAEF7-0015-4B15-85C3-88851410E059/displayed] with body: {}
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"87E61555-761D-474D-8962-35B2673234C9\",\n  \"value\" : true,\n  \"status\" : 0\n}"
+[JSONWP Proxy] Replacing sessionId 87E61555-761D-474D-8962-35B2673234C9 with f03506f6-be28-4de7-9122-943291b1dea8
+[HTTP] <-- GET /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8/element/6DEBAEF7-0015-4B15-85C3-88851410E059/displayed 200 5548 ms - 76 
+[HTTP] --> DELETE /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8 {}
+[debug] [MJSONWP] Calling AppiumDriver.deleteSession() with args: ["f03506f6-be28-4de7-9122-943291b1dea8"]
+[debug] [BaseDriver] Event 'quitSessionRequested' logged at 1509386473007 (16:01:13 GMT-0200 (-02))
+[Appium] Removing session f03506f6-be28-4de7-9122-943291b1dea8 from our master session list
+[debug] [JSONWP Proxy] Proxying [DELETE /session/f03506f6-be28-4de7-9122-943291b1dea8] to [DELETE http://localhost:8100/session/87E61555-761D-474D-8962-35B2673234C9] with no body
+[debug] [JSONWP Proxy] Got response with status 200: "{\n  \"sessionId\" : \"68F8EED3-F351-4296-9902-D526009A28CB\",\n  \"value\" : {\n\n  },\n  \"status\" : 0\n}"
+[XCUITest] Setting '755' permissions to '/Users/wanderleylandim/Library/Developer/Xcode/DerivedData/WebDriverAgent-brdadhpuduowllgivnnvuygpwhzy/Logs/Test/Attachments' folder
+[debug] [XCUITest] Not clearing log files. Use `clearSystemFiles` capability to turn on.
+[debug] [iOSLog] Stopping iOS log capture
+[debug] [BaseDriver] Event 'quitSessionFinished' logged at 1509386473466 (16:01:13 GMT-0200 (-02))
+[debug] [MJSONWP] Received response: null
+[debug] [MJSONWP] But deleting session, so not returning
+[debug] [MJSONWP] Responding to client with driver.deleteSession() result: null
+[HTTP] <-- DELETE /wd/hub/session/f03506f6-be28-4de7-9122-943291b1dea8 200 460 ms - 76 
